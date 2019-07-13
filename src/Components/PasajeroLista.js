@@ -1,25 +1,28 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 export default class PasajeroLista extends React.Component{
 
-    state = {
-        pasajeros: []
-    }
+  state = {
+    pasajeros: []
+  }
 
-    componentDidMount(){
-        axios.get('http://localhost:8080/pasajeros.json').then(res =>{
-            console.log(res);
-            this.setSate({ pasajeros : res.data});
-        })
-    }
+  componentDidMount(){
+    Axios.get('http://localhost:8080/pasajeros/index.json')
+    .then(res => {console.log(res);
+    this.setState({ pasajeros: res.data });
 
-    render(){
-        return(
-            <ul>
-                {this.state.pasajeros.map(pasajero => <li>{pasajero.nombre}</li>)}
-            </ul>
-        )
-    }
+    });
+
+  }
+
+  render(){
+    return( 
+    <div>
+    <ul>{this.state.pasajeros.map(pasajero => <li key={pasajero.id}>{pasajero.nombre}</li>)}
+    </ul>
+    </div>
+)
+  }
+
 }
-
