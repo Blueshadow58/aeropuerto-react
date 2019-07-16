@@ -1,0 +1,40 @@
+#custom {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  opacity: .95;
+  
+  
+}
+
+
+
+#custom td,
+#custom th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+#custom tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#custom tr:hover {
+  background-color: #ddd;
+  
+}
+
+#custom th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #30d42a;
+  color: white;
+  
+}
+
+.jump {
+  margin-top: 3%;
+}
+
