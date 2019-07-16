@@ -1,6 +1,6 @@
 import React from "react";
 import Axios from "axios";
-import {table,tbody,thead,tr,th,td} from 'react-foundation';
+import { table,tbody,thead,tr,th,td } from "react-foundation";
 
 export default class PasajeroLista extends React.Component {
   state = {
@@ -18,7 +18,8 @@ export default class PasajeroLista extends React.Component {
     return (
      
      
-      <table>
+
+      <table color={Colors.WARNING}>
         <thead >
           <tr>
             <th className="text-center">Id</th>
