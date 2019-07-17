@@ -3,22 +3,22 @@ import Axios from "axios";
 import { Grid, Cell } from "react-foundation";
 import "./compo.css";
 
-export default class PasajeroLista extends React.Component {
+export default class TablaVuelos extends React.Component {
   state = {
-    pasajeros: []
+    vuelos: []
   };
 
   componentDidMount() {
-    Axios.get("http://localhost:8080/pasajeros/index.json").then(res => {
+    Axios.get("http://localhost:8080/vuelos/index.json").then(res => {
       console.log(res);
-      this.setState({ pasajeros: res.data });
+      this.setState({ vuelos: res.data });
     });
   }
 
   render() {
     return (
 
-      <div className="background">
+     
       <Grid className="">
         <Cell small={3} />
         <Cell small={6} className="jump">
@@ -26,19 +26,21 @@ export default class PasajeroLista extends React.Component {
             <thead>
               <tr>
                 <th >Id</th>
-                <th >Nombre</th>
-                <th >Apellido</th>
-                <th >Nacionalidad</th>
+                <th >Codigo</th>
+                <th >Fecha</th>
+                <th>Hora</th>
+                <th >Estado</th>
               </tr>
             </thead>
             <tbody>
-              {this.state.pasajeros.map(pasajero => {
+              {this.state.vuelos.map(vuelo => {
                 return (
-                  <tr key={pasajero.id}>
-                    <td>{pasajero.id}</td>
-                    <td>{pasajero.nombre}</td>
-                    <td>{pasajero.apellido}</td>
-                    <td>{pasajero.nacionalidad}</td>
+                  <tr key={vuelo.id}>
+                    <td>{vuelo.id}</td>
+                    <td>{vuelo.nombre}</td>
+                    <td>{vuelo.fecha}</td>
+                    <td>{vuelo.hora}</td>
+                    <td>{vuelo.estado}</td>
                   </tr>
                 );
               })}
@@ -47,7 +49,7 @@ export default class PasajeroLista extends React.Component {
         </Cell>
         <Cell small={3} />
       </Grid>
-      </div>
+      
 
 
     );
