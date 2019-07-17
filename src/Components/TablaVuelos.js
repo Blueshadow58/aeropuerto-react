@@ -19,9 +19,9 @@ export default class TablaVuelos extends React.Component {
     return (
 
      
-      <Grid className="">
+      <Grid >
         <Cell small={3} />
-        <Cell small={6} className="jump">
+        <Cell small={6} >
           <table id="custom">
             <thead>
               <tr>

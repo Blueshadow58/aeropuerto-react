@@ -21,7 +21,7 @@ export default class TablaPasajeros extends React.Component {
      
       <Grid className="">
         <Cell small={3} />
-        <Cell small={6} className="jump">
+        <Cell small={6} >
           <table id="custom">
             <thead>
               <tr>

@@ -2,12 +2,10 @@
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  opacity: .95;
+  opacity: .90;
   
   
 }
-
-
 
 #custom td,
 #custom th {
@@ -21,8 +19,13 @@
 }
 
 #custom tr:hover {
-  background-color: #ddd;
-  
+  background-color: rgb(255, 238, 0);
+  font-weight: bold;
+}
+
+#custom th:hover{
+  background-color: rgb(255, 238, 0);
+  color: black;
 }
 
 #custom th {
@@ -35,6 +38,6 @@
 }
 
 .jump {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 

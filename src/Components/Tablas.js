@@ -1,46 +1,47 @@
-
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import "./compo.css";
+import { Button, Colors,Sizes,ButtonGroup } from "react-foundation";
+import "../Components/compo.css";
 import TablaPasajeros from "./TablaPasajeros";
 import TablaVuelos from "./TablaVuelos";
 
-function BasicExample() {               
-      
+function BasicExample() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Tabla pasajero</Link>
-          </li>
-          <li>
-            <Link to="/About">Tabla Vuelos</Link>
-          </li>         
-        </ul>      
-        <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />        
+        <div>
+        <ButtonGroup className="botones" size={Sizes.SMALL}>
+          <Link to="/Pasajero">
+            <Button size={Sizes} color={Colors.WARNING}>Tabla Pasajeros</Button>
+          </Link>
+          <br/>
+          <Link to="/Vuelo">
+            <Button color={Colors.WARNING}>Tabla Vuelos</Button>
+          </Link>
+          
+          </ButtonGroup>
+        </div>
+        <Route exact path="/Pasajero" component={Pasajero} />
+        <Route path="/Vuelo" component={Vuelo} />
       </div>
     </Router>
   );
 }
 
-function Home() {
+function Pasajero() {
   return (
     <div>
-       <TablaPasajeros/>
+      <TablaPasajeros />
     </div>
   );
 }
 
-function About() {
+function Vuelo() {
   return (
     <div>
-      <TablaVuelos/>
+      <TablaVuelos />
     </div>
   );
 }
-
 
 export default BasicExample;
