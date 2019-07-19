@@ -9,7 +9,7 @@ export default class TablaPasajeros extends React.Component {
   };
 
   componentDidMount() {
-    Axios.get("http://localhost:8080/pasajeros/index.json").then(res => {
+    Axios.get("http://localhost:8080/pasajeros").then(res => {
       console.log(res);
       this.setState({ pasajeros: res.data });
     });
@@ -20,7 +20,7 @@ export default class TablaPasajeros extends React.Component {
 
      
       <Grid className="">
-        <Cell small={3} />
+        <Cell small={3} />        
         <Cell small={6} >
           <table id="custom">
             <thead>

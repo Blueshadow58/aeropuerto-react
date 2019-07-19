@@ -12,7 +12,7 @@ function BasicExample() {
         <div>
         <ButtonGroup className="botones" size={Sizes.SMALL}>
           <Link to="/Pasajero">
-            <Button size={Sizes} color={Colors.WARNING}>Tabla Pasajeros</Button>
+            <Button color={Colors.WARNING}>Tabla Pasajeros</Button>
           </Link>
           <br/>
           <Link to="/Vuelo">
