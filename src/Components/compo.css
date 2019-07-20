@@ -36,8 +36,32 @@
   color: white;
   
 }
+.boton{
 
-.jump {
-  margin-top: 1%;
+  background-color: #30d42a;
+
+
+}
+.contenedor{
+background-color: #30d42a;
+opacity: 30%; 
+border: 1px solid white;
 }
 
+.blanco{
+color: #f2f2f2;
+font-weight: bold;
+}
+
+.jump{
+  margin-top: 20%;
+}
+
+input[type="text"]{
+
+  width: 100%;
+  align-content: center;
+
+
+}
+/* se arma una string se manda en post con axios al servidor de base con una funcion del active jdbc. hay que fijarse en el ejemplo de los libros , usar comando safe que graba. Francisco lo hizo con un json, marduck con un string

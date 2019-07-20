@@ -1,6 +1,6 @@
 import React from "react";
 import Axios from "axios";
-import { Grid, Cell } from "react-foundation";
+import { Grid, Cell, Sizes, Colors, Button} from "react-foundation";
 import "./compo.css";
 
 export default class TablaVuelos extends React.Component {
@@ -20,7 +20,30 @@ export default class TablaVuelos extends React.Component {
 
      
       <Grid >
-        <Cell small={3} />
+        
+        <Cell small={1}/>
+        <Cell small={3}>
+        <div className="contenedor jump">
+
+        <div class="form-style-6">
+          <h1 className="blanco">Ingresar Vuelo</h1>
+          <form>
+            <br/>
+            
+          <input type="text" placeholder="Codigo" />
+          <input type="text" placeholder="Fecha" />
+          <input type="text" placeholder="Hora" />
+          <input type="text" placeholder="Estado" />
+          <Button size={Sizes} color={Colors.SUCCESS}>Aceptar</Button>
+          </form>
+          </div>
+          </div>
+        </Cell>
+
+        
+        <Cell small={1}/>
+        
+
         <Cell small={6} >
           <table id="custom">
             <thead>
@@ -47,7 +70,7 @@ export default class TablaVuelos extends React.Component {
             </tbody>
           </table>
         </Cell>
-        <Cell small={3} />
+        <Cell small={1}/>
       </Grid>
       
 
