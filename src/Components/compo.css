@@ -20,7 +20,9 @@
 
 #custom tr:hover {
   background-color: rgb(255, 238, 0);
-  font-weight: bold;
+  transform: scale(1.01);
+  
+  
 }
 
 #custom th:hover{
@@ -44,8 +46,9 @@
 }
 .contenedor{
 background-color: #30d42a;
-opacity: 30%; 
-border: 1px solid white;
+opacity: .90;
+border: 5px solid white;
+border-radius: 5px;
 }
 
 .blanco{
@@ -54,14 +57,39 @@ font-weight: bold;
 }
 
 .jump{
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 input[type="text"]{
 
-  width: 100%;
+  width: 80%;
   align-content: center;
-
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
 
 }
-/* se arma una string se manda en post con axios al servidor de base con una funcion del active jdbc. hay que fijarse en el ejemplo de los libros , usar comando safe que graba. Francisco lo hizo con un json, marduck con un string
+
+input[type="text"]::placeholder{
+
+  text-align: center;
+  font-weight: bold;
+  color: darkgray;
+}
+
+input[type="datetime"]{
+  width: 80%;
+  align-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;  
+  font-weight: bold;
+
+}
+
+input[type="datetime"]::placeholder{
+
+  text-align: center;
+  font-weight: bold;
+  color: darkgray;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import Axios from "axios";
-import { Grid, Cell, Button, Colors, Sizes} from "react-foundation";
+import { Grid, Cell} from "react-foundation";
 import "./compo.css";
+import FormPasajeros from "./FormPasajeros";
 
 export default class TablaPasajeros extends React.Component {
   state = {
@@ -19,26 +20,14 @@ export default class TablaPasajeros extends React.Component {
     return (
 
      
-      <Grid className="">
-
-        <Cell small={3} />        
-
+      <Grid>
 
         
         <Cell small={1}/>
         <Cell small={3} >
-        <div className="contenedor jump">
-          
-          <div class="form-style-6">
-          <h1 className="blanco">Ingresar Pasajero</h1>
-          <form>
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Apellido" />
-          <input type="text" placeholder="Nacionalidad" />
-          <Button size={Sizes} color={Colors.SUCCESS}>Aceptar</Button>
-          </form>
-          </div>
-          </div>
+        <div className="jump ">
+        <FormPasajeros/>
+          </div>         
         </Cell>
         <Cell small={1}/>
 

@@ -1,7 +1,8 @@
 import React from "react";
 import Axios from "axios";
-import { Grid, Cell, Sizes, Colors, Button} from "react-foundation";
+import { Grid, Cell} from "react-foundation";
 import "./compo.css";
+import FormVuelos from "./FormVuelos";
 
 export default class TablaVuelos extends React.Component {
   state = {
@@ -9,7 +10,7 @@ export default class TablaVuelos extends React.Component {
   };
 
   componentDidMount() {
-    Axios.get("http://localhost:8080/vuelos/index.json").then(res => {
+    Axios.get("http://localhost:8080/vuelos").then(res => {
       console.log(res);
       this.setState({ vuelos: res.data });
     });
@@ -23,20 +24,8 @@ export default class TablaVuelos extends React.Component {
         
         <Cell small={1}/>
         <Cell small={3}>
-        <div className="contenedor jump">
-
-        <div class="form-style-6">
-          <h1 className="blanco">Ingresar Vuelo</h1>
-          <form>
-            <br/>
-            
-          <input type="text" placeholder="Codigo" />
-          <input type="text" placeholder="Fecha" />
-          <input type="text" placeholder="Hora" />
-          <input type="text" placeholder="Estado" />
-          <Button size={Sizes} color={Colors.SUCCESS}>Aceptar</Button>
-          </form>
-          </div>
+        <div className=" jump">
+        <FormVuelos/>
           </div>
         </Cell>
 
@@ -60,7 +49,7 @@ export default class TablaVuelos extends React.Component {
                 return (
                   <tr key={vuelo.id}>
                     <td>{vuelo.id}</td>
-                    <td>{vuelo.nombre}</td>
+                    <td>{vuelo.codigo}</td>
                     <td>{vuelo.fecha}</td>
                     <td>{vuelo.hora}</td>
                     <td>{vuelo.estado}</td>

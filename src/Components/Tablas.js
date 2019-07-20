@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Button, Colors,Sizes,ButtonGroup } from "react-foundation";
-import "../Components/compo.css";
+import "./compo.css";
 import TablaPasajeros from "./TablaPasajeros";
 import TablaVuelos from "./TablaVuelos";
 
@@ -12,7 +12,7 @@ function BasicExample() {
         <div>
         <ButtonGroup className="botones" size={Sizes.SMALL}>
           <Link to="/Pasajero">
-            <Button color={Colors.WARNING}>Tabla Pasajeros</Button>
+            <Button size={Sizes.SMALL} color={Colors.WARNING}>Tabla Pasajeros</Button>
           </Link>
           <br/>
           <Link to="/Vuelo">
