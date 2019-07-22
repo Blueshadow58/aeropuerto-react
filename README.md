@@ -13,12 +13,12 @@ Visual Studio Code es un editor de código fuente. Es compatible con varios leng
 
 <!--ts-->
    * [Requisitos Previos](#Requisitos-previos)
-   * [Instalación](#Instalación)
-   * [PATH](#PATH)
-   * [Clonar repositorio en VS Code](#Para-clonar-nuestro-repositorio-en-Visual-Studio-Code)
    * [Descargar repositorio github](#Para-descargar-un-proyecto-de-github)
+   * [Clonar repositorio en VS Code](#Para-clonar-nuestro-repositorio-en-Visual-Studio-Code)
+   * [PATH](#PATH)
    * [Mini Servidor](#Mini-Server)
    * [CORS](#CORS)
+   * [Foundation](#Foundation-CSS)
 <!--te-->
 
 
@@ -42,9 +42,11 @@ Lo ultimo que haremos será descargar nuestro proyecto de VS code el cual ya se 
 
 ### Para descargar un proyecto de github
 Lo primero que haremos será ir a cualquier repositorio github, a partir de ahí haremos click en "Clone or Download"
+
 <img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Descargar%20repositorio%20desde%20github/Screenshot_1.png">
 
 Luego seleccionaremos la opción "Download ZIP"
+
 <img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Descargar%20repositorio%20desde%20github/Screenshot_2.png">
 
 
@@ -57,8 +59,13 @@ Luego haremos click en el boton al lado de la URL
 
 <img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Clonar%20repositorio%20desde%20github%20a%20VSC/Screenshot_2.png">
 
-En VS code presionaremos las siguientes teclas "ctr + shift + p", ahí escribiremos lo siguiente "Git: Clone", en el siguiente campo de texto escribiremos nuestra URL del proyecto
-<img src="">
+En VS code presionaremos las siguientes teclas "ctr + shift + p", ahí escribiremos lo siguiente "Git: Clone"
+
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_4.png">
+
+En el siguiente campo de texto escribiremos nuestra URL del proyecto
+
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_5.png">
 
 
 ### PATH
