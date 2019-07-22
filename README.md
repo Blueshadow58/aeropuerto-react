@@ -1,3 +1,13 @@
+# Guía Instalación Visual Studio Code y proyecto
+
+La siguiente será una guía de instalación de nuestro editor de código Visual Studio Code en el cual realizaremos nuestro proyecto, para esto descargaremos la versión 12.6.0 de Node.js, nuestra base de datos portable la cual ya contiene datos introducidos en esta y nuestro código de VS code
+
+
+## Sobre Visual Studio Code
+
+Visual Studio Code es un editor de código fuente. Es compatible con varios lenguajes de programación y un conjunto de características que pueden o no estar disponibles para un idioma dado. Muchas de las características de Visual Studio Code no están expuestas a través de los menús o la interfaz de usuario. Más bien, se accede a través de la paleta de comandos o a través de archivos .json. La paleta de comandos es una interfaz de línea de comandos. Sin embargo, desaparece si el usuario hace clic fuera de él o presiona una combinación de teclas en el teclado para interactuar con algo que está fuera de él. Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows , Linux y macOS. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.
+
+
 ## Tabla de contenidos
 
 
@@ -5,10 +15,10 @@
    * [Requisitos Previos](#Requisitos-previos)
    * [Instalación](#Instalación)
    * [PATH](#PATH)
-   * [Clonar repositorio en VSC](#Para clonar nuestro repositorio en Visual Studio Code)
-   * [Descargar repositorio github](#Para descargar un proyecto de github)
-   * [Mini Servidor](#Mini Server)
-   * [CORS](#Information about CORS)
+   * [Clonar repositorio en VS Code](#Para-clonar-nuestro-repositorio-en-Visual-Studio-Code)
+   * [Descargar repositorio github](#Para-descargar-un-proyecto-de-github)
+   * [Mini Servidor](#Mini-Server)
+   * [CORS](#Information-about-CORS)
 <!--te-->
 
 
@@ -16,47 +26,62 @@
 # Requisitos previos
 
 ### Descargar e instalar Visual Studio Code
-Lo primero que haremos será descargar el software [Visual Studio Code](https://code.visualstudio.com/Download)
+Lo primero que haremos será descargar e instalar el software [Visual Studio Code](https://code.visualstudio.com/Download), al momento de estar realizando la instalación tenemos que asegurarnos que la opción "agregar a PATH" se encuentre seleccionada, al no seleccionar este apartado tendremos que realizarlo manualmente, véase [PATH](#PATH) para mas información.
+
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_6.png">
 
 ### Descargar e instalar Node.js
 Una vez que ya tenemos instalado Visual Studio Code descargaremos [Node.js (12.6.0)](https://nodejs.org/es/)
 
 ### Descargar Mini server
-Cuando ya hayamos descargado e instalado Node.js procederemos a descargar nuestro [Mini server](https://github.com/JoanneCentos/Mini-Server) y descomprimirlo respectivamente.
+Cuando ya hayamos descargado e instalado Node.js procederemos a descargar nuestra base de datos portable [Mini server](https://github.com/JoanneCentos/Mini-Server) y descomprimirlo respectivamente, una vez hecho esto nuestra base de datos está lista para trabajar
 
 ### Descargar Codigo Aeropuerto
-[Aeropuerto](https://github.com/Blueshadow58/aeropuerto-java)
+Lo ultimo que haremos será descargar nuestro proyecto de VS code el cual ya se encuentra funcional [Aeropuerto](https://github.com/Blueshadow58/aeropuerto-java), en caso que no sepa como descargar un proyecto desde github concurra al siguiente paso primero
 
 
 ### Para descargar un proyecto de github
 Lo primero que haremos será ir a cualquier repositorio github, a partir de ahí haremos click en "Clone or Download"
-<img src="">
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Descargar%20repositorio%20desde%20github/Screenshot_1.png">
 
 Luego seleccionaremos la opción "Download ZIP"
-<img src="">
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Descargar%20repositorio%20desde%20github/Screenshot_2.png">
 
 
 ### Para clonar nuestro repositorio en Visual Studio Code
-Para clonar nuestro repositorio en Visual Studio Code será necesario ir a nuestro proyecto github, donde haremos click en el boton al lado de la URL
-<img src="">
+Para clonar nuestro repositorio en Visual Studio Code será necesario ir a nuestro proyecto github, donde haremos click en el botón "Clone or download"
 
-En VSC presionaremos las siguientes teclas "ctr + shift + p"
-<img src="">
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Clonar%20repositorio%20desde%20github%20a%20VSC/Screenshot_1.png">
 
-Ahí escribiremos lo siguiente "Git: Clone"
-<img src="">
+Luego haremos click en el boton al lado de la URL
 
-En el siguiente campo de texto escribiremos nuestra URL del proyecto
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Clonar%20repositorio%20desde%20github%20a%20VSC/Screenshot_2.png">
+
+En VS code presionaremos las siguientes teclas "ctr + shift + p", ahí escribiremos lo siguiente "Git: Clone", en el siguiente campo de texto escribiremos nuestra URL del proyecto
 <img src="">
 
 
 ### PATH
 
-win + r
-systempropertiesremote.exe
-Opciones avanzadas
-Variables de entorno
-Copiar direccion del proyecto react
+PATH es una variable de entorno de los sistemas de Microsoft, en ella se especifican las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. En el caso que al instalar VS code no hayamos seleccionado dicha casilla, tendremos que realizarlo manualmente, para ello siga los siguientes pasos.
+
+Lo primero que haremos será realizar la siguiente combinación de teclas "win + r"
+
+<img src="">
+
+Una vez hecho esto escribiremos lo siguiente "systempropertiesremote.exe" lo que nos abrirá la siguiente ventana
+
+<img src="">
+
+Haremos click en la ventana de "Opciones avanzadas" la cual nos mostrará lo siguiente
+
+<img src="">
+
+Haremos click en el botón "Variables de entorno", aquí haremos click en nueva y escribiremos lo siguiente y hacemos click en aceptar
+
+    Nombre de la variable: "PATH"
+    Valor de la variable "La dirección de la carpeta node"
+
 
 ### Mini Server
 En este caso en la carpeta de nuestro mini server abriremos el archivo "mysql_start", una vez abierto escribiremos lo siguiente "mysql --user=root --password=root". Ahora tendremos acceso a nuestra base de datos y podremos realizar consultas en esta
