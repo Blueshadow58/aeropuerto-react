@@ -18,7 +18,7 @@ Visual Studio Code es un editor de código fuente. Es compatible con varios leng
    * [Clonar repositorio en VS Code](#Para-clonar-nuestro-repositorio-en-Visual-Studio-Code)
    * [Descargar repositorio github](#Para-descargar-un-proyecto-de-github)
    * [Mini Servidor](#Mini-Server)
-   * [CORS](#Information-about-CORS)
+   * [CORS](#CORS)
 <!--te-->
 
 
@@ -26,7 +26,7 @@ Visual Studio Code es un editor de código fuente. Es compatible con varios leng
 # Requisitos previos
 
 ### Descargar e instalar Visual Studio Code
-Lo primero que haremos será descargar e instalar el software [Visual Studio Code](https://code.visualstudio.com/Download), al momento de estar realizando la instalación tenemos que asegurarnos que la opción "agregar a PATH" se encuentre seleccionada, al no seleccionar este apartado tendremos que realizarlo manualmente, véase [PATH](#PATH) para mas información.
+Lo primero que haremos será descargar e instalar el editor de código [Visual Studio Code](https://code.visualstudio.com/Download), al momento de estar realizando la instalación tenemos que asegurarnos que la opción "agregar a PATH" se encuentre seleccionada, al no seleccionar este apartado tendremos que realizarlo manualmente, véase [PATH](#PATH) para mas información.
 
 <img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_6.png">
 
@@ -63,170 +63,54 @@ En VS code presionaremos las siguientes teclas "ctr + shift + p", ahí escribire
 
 ### PATH
 
+#### Sobre PATH
 PATH es una variable de entorno de los sistemas de Microsoft, en ella se especifican las rutas en las cuales el intérprete de comandos debe buscar los programas a ejecutar. En el caso que al instalar VS code no hayamos seleccionado dicha casilla, tendremos que realizarlo manualmente, para ello siga los siguientes pasos.
 
 Lo primero que haremos será realizar la siguiente combinación de teclas "win + r"
 
-<img src="">
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_1.png">
 
-Una vez hecho esto escribiremos lo siguiente "systempropertiesremote.exe" lo que nos abrirá la siguiente ventana
+Una vez hecho esto escribiremos lo siguiente "systempropertiesremote.exe" lo que nos abrirá la siguiente ventana, haremos click en la ventana de "Opciones avanzadas" la cual nos mostrará lo siguiente
 
-<img src="">
-
-Haremos click en la ventana de "Opciones avanzadas" la cual nos mostrará lo siguiente
-
-<img src="">
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_2.png">
 
 Haremos click en el botón "Variables de entorno", aquí haremos click en nueva y escribiremos lo siguiente y hacemos click en aceptar
 
     Nombre de la variable: "PATH"
     Valor de la variable "La dirección de la carpeta node"
 
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/PATH/Screenshot_3.png">
+
 
 ### Mini Server
-En este caso en la carpeta de nuestro mini server abriremos el archivo "mysql_start", una vez abierto escribiremos lo siguiente "mysql --user=root --password=root". Ahora tendremos acceso a nuestra base de datos y podremos realizar consultas en esta
-<img src="">
+Si ya descargamos nuestra base de datos portable, procederemos a abrir la carpeta donde abriremos el archivo "mysql_start" 
+
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Mini%20Server/Screenshot_3.png">
+
+Una vez abierto escribiremos lo siguiente "mysql --user=root --password=root". Ahora tendremos acceso a nuestra base de datos y podremos realizar consultas en esta
+
+<img src="https://raw.githubusercontent.com/Blueshadow58/aeropuerto-react/master/Imagenes%20github/Mini%20Server/Screenshot_1.png">
 
 
-### Information about CORS
-https://alfilatov.com/posts/run-chrome-without-cors/
+### CORS
 
-Iremos al directorio de nuestro proyecto react y copiaremos la dirección, en mi caso será "C:\Users\Top\Aero\aeropuerto-react"
-Luego abriremos la consola
-"win + r"
-"cmd"
-Ahí haremos un "cd" y copiaremos la direccion de nuestro directorio
-cd C:\Users\Top\Aero\aeropuerto-react
+#### Sobre CORS
+El intercambio de recursos de origen cruzado o CORS (Cross-origin resource sharing, en sus siglas en inglés) es un mecanismo que permite que se puedan solicitar recursos restringidos (como por ejemplo, las tipografías) en una página web desde un dominio fuera del dominio que sirvió el primer recurso. CORS define una forma en la cual el navegador y el servidor pueden interactuar para determinar si es seguro permitir una petición de origen cruzado. Esto permite tener más libertad y funcionalidad que las peticiones de mismo origen, pero es adicionalmente más seguro que simplemente permitir todas las peticiones de origen cruzado.
+
+El primer paso será mediante el comando "win + r" abrir nuestro cmd introduciendo "cmd" en el campo de texto. Ahí haremos un "cd" y copiaremos la direccion de nuestro proyecto, en nuestro caso será la siguiente
+
+    cd C:\Users\Top\Aero\aeropuerto-react
+    
 Una vez hecho esto ingresaremos lo siguiente lo que nos abrirá nuestro buscador
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
 
+### Foundation CSS
 
-# Instalación
+#### Sobre Foundation
+Foundation es un framework de interfaz de usuario responsive. Foundation proporciona una cuadrícula responsive e incluye componentes de interfaz de usuario HTML y CSS, plantillas, y fragmentos de código, incluyendo tipografía, formularios, botones, barras de navegación y otros componentes de interfaz usuario, así como extensiones de JavaScript opcionales. Foundation está mantenida por zurb.com y es un proyecto de código abierto.
 
+Si realizamos los pasos anteriores correctamente en la misma consola con la que accedimos al directorio de nuestro proyecto utilizaremos los siguientes comandos con lo que agregaremos Foundation a nuestro proyecto y luego lo iniciaremos
 
+    npm install foundation-sites
+    npm start
 
-
-
-
-
-
-
-
-
-
-descargar visual estudio code		https://code.visualstudio.com/Download
-descargar node.js			https://nodejs.org/es/
-netbeans codigo aeropuerto		https://github.com/Blueshadow58/aeropuerto-java	
-Copiar base de datos			
-Copiar de github proyecto react		
-
-
-- Ir a https://github.com/Blueshadow58/aeropuerto-react
-- Clone or download
-- copiar url
-- en visual studio code ctrl + shift + p
-- Git: Clone
-- Copiar ahí la URL
-
-
-
-Abrir mini server (mysql_start)
-
-
-
-
-
-Abrir chrome 
-
-Copiar en cmd
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
-
-ir a la carpeta del proyecto react
-
-cd C:\Users\19817702-4\Aero\aeropuerto-react (donde esté el proyecto)
-
-npm install foundation-sites
-
-npm start
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
